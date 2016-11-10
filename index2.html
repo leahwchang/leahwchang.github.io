@@ -19,9 +19,24 @@
 		<script type="text/javascript" src="public/javascript.js"></script>
 	</head>
 
-	<body>
+	<body date-spy="scroll" data-target="#navigation">
 		<div class="wrap container-fluid">
+
 			<!-- navigation -->
+			<div class="container-fluid" id="navigation">
+				<div class="row">
+					<div class="col-xs-12 col-md-5 col-md-offset-6" data-spy="affix">
+						<nav>
+							<ul class="list-inline text-right">
+								<li><a href="#" target="_blank">email</a></li>
+								<li><a href="#" target="_blank">linkedin</a></li>
+								<li><a href="#" target="_blank">github</a></li>
+		        		<li><a href="#projects" id="nav-link">projects</a></li>
+		        	</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
 
 			<!-- section 1: about me -->
 			<div class="container-fluid content img-responsive" id="about">
@@ -39,7 +54,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- section 2: projects -->
 			<div class="container-fluid content img-responsive" id="projects">
 				<div class="row section">
