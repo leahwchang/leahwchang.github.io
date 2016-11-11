@@ -1,11 +1,38 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Martel', serif;
+*/
+
 /*html {
   height: 100%;
 }
 */
 
 body {
-  position: relative;
   /*height: 100%;*/
+  position: relative;
+  font-family: 'Martel', serif;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  padding: 20px;
+}
+
+.highlight {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.text {
+  font-size: 1.3em;
+  padding: 40px 30px 40px 30px;
 }
 
 .wrap {
@@ -17,22 +44,34 @@ body {
 #navigation {
   /*height: 150px;*/
   /*width: 350px;*/
+  /*margin-top: 10px;*/
+  /*padding-top: 10px;*/
   border: 1px solid #4433D1;
   /*position: fixed;*/
   /*top: 40px;*/
   /*right: 100px;*/
   /*display: block;*/
+
+}
+
+nav {
+  padding-top: 10px;
+}
+
+.fa {
+  padding-right: 20px;
 }
 
 ul li {
-  /*display: inline;*/
+  font-size: 1.3em;
 }
 
 .content {
   border: 1px solid blue;
   padding: 0;
   margin: 0;
-  height: 667px;
+  /*height: 667px;*/
+  height: 800px;
 }
 
 .section {
