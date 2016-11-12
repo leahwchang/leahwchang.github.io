@@ -4,24 +4,31 @@
 		<title>Leah Chang | Web Developer</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- jquery -->
 		<script type="text/javascript" src="public/jquery-2.1.4.js"></script>
-		<!-- font awesome icons -->
-		<link rel="stylesheet" href="public/font-awesome-4.7.0/css/font-awesome.min.css">
 
 		<!-- bootstrap -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Optional theme -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- bootstrap -->
 
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Catamaran:200,400|Martel:300|Playfair+Display:700i|Roboto" rel="stylesheet">
 
+		<!-- font awesome icons -->
+		<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+
+		<!-- slick carousel -->
+		<link rel="stylesheet" type="text/css" href="public/slick/slick.css"/>
+		<!-- slick carousel default styling -->
+		<link rel="stylesheet" type="text/css" href="public/slick/slick-theme.css"/>
+		<script type="text/javascript" src="public/slick/slick.min.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="public/stylesheet2.css">
 		<script type="text/javascript" src="public/javascript.js"></script>
+
 	</head>
 
 	<body date-spy="scroll" data-target="#navigation">
@@ -30,7 +37,7 @@
 			<!-- navigation -->
 			<div class="container-fluid" id="navigation">
 				<div class="row">
-					<div class="col-xs-12 col-md-5 col-md-offset-6" data-spy="affix">
+					<div class="col-xs-12 col-md-11 navi" data-spy="affix">
 						<nav>
 							<ul class="fa-ul list-inline text-right">
 								<li><a href="#" target="_blank"><i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i></a></li>
@@ -73,28 +80,77 @@
 						projects
 					</div>
 				</div>
-				<div class="row section">
-					<div class="col-xs-12 col-md-5 col-md-offset-1 text">
-						1 works
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="col-xs-12 col-md-5 text">
-						2 works
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+				<div class="row section carousel">
+					<div class="col-xs-12 col-md-10 col-md-offset-1">
+						<div class="carouselFrame">
+						  <div class="carouselItem">
+						  	<div class="col-xs-12 col-md-6 text">
+									project1 1 works
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+								<div class="col-xs-12 col-md-6 text">
+									project1 2 works
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+					 
+						  <div class="carouselItem">
+						  	<div class="col-xs-12 col-md-6 text">
+									project2 1 works
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+								<div class="col-xs-12 col-md-6 text">
+									project2 2 works
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+						  </div>
+
+						  <div class="carouselItem">
+						  	<div class="col-xs-12 col-md-6 text">
+									project3 1 works
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+								<div class="col-xs-12 col-md-6 text">
+									project3 2 works
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+					  	</div>
+						</div>
 					</div>
 				</div>
-			</div>
 
+			</div>
 		</div>
 	</body>
 </html>

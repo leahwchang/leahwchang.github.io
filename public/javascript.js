@@ -34,4 +34,13 @@ $(document).ready(function(){
       $("a").attr("href", "#projects");
     }
   });
+
+  $('.carouselFrame').slick({
+    // dots: true,
+    arrows: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: 0
+    // appendDots: $("#naviDots")
+  }) ;
 });
