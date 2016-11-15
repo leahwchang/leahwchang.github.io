@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // css tricks
   // add scrollspy to <body>
   $('body').scrollspy({target: "#navigation", offset: 50});
   // add smooth scrolling on all links inside the navbar
@@ -34,13 +35,12 @@ $(document).ready(function(){
       $("a").attr("href", "#projects");
     }
   });
-
+  
+  // slick carousel
   $('.carouselFrame').slick({
-    // dots: true,
     arrows: true,
     infinite: true,
     centerMode: true,
     centerPadding: 0
-    // appendDots: $("#naviDots")
   }) ;
 });
