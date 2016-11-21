@@ -92,13 +92,27 @@ html, body {
   }
 }
 
-/****** Content Style Formatting ******/
+/****** Dropdown Menu Formatting ******/
 ul li {
   list-style: none;
 }
 
+.list-group, .list-group-item {
+  border-width: 0 0 0 0;
+}
 
+.dropdown-menu {
+  width: 250px;
+  border-radius: 0;
+}
 
+.projects {
+
+}
+
+.social-icons {
+  margin: 0;
+}
 
 /********** Sidebar Navigation **********/
 
