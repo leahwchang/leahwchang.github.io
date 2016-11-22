@@ -1,18 +1,16 @@
 /*
-font-family: 'Playfair Display', serif;
-font-family: 'Martel', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rozha One', serif;
 */
-
-.bold {
-  font-weight: 700;
-}
 
 /****** Basic Body, Row, Column, Grid Formatting ******/
 
 html, body {
   height: 100%;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  /*font-size: 0.5em;*/
 }
 
 .wrapper {
@@ -28,7 +26,7 @@ html, body {
   align-items: center;
 }
 
-.container-fluid {
+.container {
   /*border: 1px solid yellow;*/
   height: 100%;
 }
@@ -72,15 +70,25 @@ html, body {
   margin-bottom: 10px; 
 }
 
+.bold {
+  font-family: 'Rozha One', serif;
+  /*font-weight: 700;*/
+  font-size: 1.2em;
+  /*color: #000000;*/
+}
+
 .logo {
-  font-weight: 700;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /*font-weight: 700;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Rozha One', serif;
+  font-size: 1.5em;
 }
 
 .footer {
   margin-top: 20px;
 }
+
 
 
 /****** Media Queries ******/
@@ -127,12 +135,16 @@ html, body {
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Rozha One', serif;
+    font-size: 1.5em;
   }
 
   .footer {
     margin-top: 15px;
   }
 }
+
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -173,12 +185,16 @@ html, body {
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Rozha One', serif;
+    font-size: 1.5em;
   }
 
   .footer {
     margin-top: 15px;
   }
 }
+
+
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -255,6 +271,7 @@ html, body {
 /****** Dropdown Menu Formatting ******/
 ul li {
   list-style: none;
+  /*text-decoration: none;*/
 }
 
 .dropdown-menu {
@@ -263,30 +280,37 @@ ul li {
 }
 
 .dropdown-menu li #logo {
-  /*font-family: 'Playfair Display', serif;*/
-  font-weight: 700;
+  font-family: 'Rozha One', serif;
+  font-size: 1.5em;
 }
 
 .list-group, .list-group-item {
   border-width: 0 0 0 0;
   margin: 0;
+  text-decoration: none;
 }
+
+
 
 
 /****** Social Icons ******/
 .menu-icons {
   margin: 0;
-  background-color: #000000;
+  /*background-color: #FFFFFF;*/
+  border: 1px solid #927EB4;
   border-radius: 50px;
   height: 25px;
   width: 25px;
   display: inline-block;
   padding-top: 2px;
+  /*color: #A393BF;*/
 }
 
 /* footer icons */
 .icons {
-  background-color: #000000;
+  /*color: #A393BF;*/
+  /*background-color: #FFFFFF;*/
+  border: 1px solid #927EB4;
   border-radius: 50px;
   height: 25px;
   width: 25px;
@@ -295,4 +319,40 @@ ul li {
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+
+
+/****** Links ******/
+.list-group-item a .bold {
+  font-family: 'Rozha One', serif;
+  font-size: 1.15em;
+}
+
+.projects .list-group-item a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85em;
+}
+
+.dropdown-menu .list-group-item a, .dropdown-menu .list-group-item a:hover, .dropdown-menu .list-group-item a:active, .dropdown-menu .list-group-item a:visited {
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+
+.logo > div > a, .logo > div > a:active, .logo > div > a:hover, .logo > div > a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul.projects li a, ul.projects li a:hover, ul.projects li a:visited, ul.projects li a:active {
+  color: #927EB4;
+  text-decoration: none;
+}
+
+a:hover > .fa, a:visited > .fa, a:active > .fa,
+a > .fa, a:link > .fa, 
+.menu-icons > a > i, .menu-icons > a:link > i, .menu-icons > a:hover > i, .menu-icons > a:active > i, .menu-icons > a:visited > i {
+  text-decoration: none;
+  color: #927EB4;
+  background-color: #FFFFFF;
 }
