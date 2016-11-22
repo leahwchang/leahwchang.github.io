@@ -1,17 +1,32 @@
+/*@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}*/
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Martel', serif;
+*/
+
+.bold {
+  font-weight: 700;
+}
+
+
 /****** Basic Body, Row, Column, Grid Formatting ******/
 
 html, body {
   height: 100%;
-  background-color: #000000;
   padding: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 .wrapper {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 130px;
   padding-right: 130px;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   /* Fallback for browsers do NOT support vh unit */
   min-height: 100%;
   min-height: 100vh;
@@ -20,31 +35,50 @@ html, body {
 }
 
 .container-fluid {
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   height: 100%;
 }
 
 .row {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   padding: 0;
   margin: 0;
 }
 
 .row [class*="col-"]{
-  border: 1px solid green;
-  background-color: #FFFFFF;
+  /*border: 1px solid green;*/
   padding: 0;
   margin: 0;
 }
 
+.projects .row [class*="col-"]{
+  /*border: 1px solid green;*/
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+
+/****** Media Queries ******/
+
 /* Custom, iPhone Retina, iPhone Plus */ 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 768px) {
   .wrapper {
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 2px;
     padding-right: 2px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     /* Fallback for browsers do NOT support vh unit */
     min-height: 100%;
     min-height: 100vh;
@@ -53,7 +87,7 @@ html, body {
   }
 
   .col-xs-12 {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     padding: 0;
     margin: 0;
   }
@@ -65,10 +99,22 @@ html, body {
     z-index: 1;
     margin-right: 30px;
   }
-/*  .img-responsive {
-    height: auto;
-    width: auto;
-  }*/
+
+  .about [class*="col-"] {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+  }
+
+  .logo {
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    margin-top: 15px;
+  }
 }
 
 /* Custom, iPad Pro, Desktop */
@@ -90,15 +136,48 @@ html, body {
     z-index: 1;
     margin-right: 55px;
   }
+
+  .p1 {
+    height: 360px;
+    width: 320px;
+    background-color: red;
+  }
+
+  .p2 {
+    height: 180px;
+    width: 640px;
+    background-color: blue;
+  }
+
+  .aboutme {
+    height: 180px;
+    width: 320px;
+    background-color: black;
+  }
+
+  .p3 {
+    height: 180px;
+    width: 320px;
+    background-color: yellow; 
+  }
+
+  .p4 {
+    height: 240px;
+    width: 560px;
+    background-color: green;
+  }
+
+  .p5 {
+    height: 240px;
+    width: 400px;
+    background-color: pink;
+  }
 }
+
 
 /****** Dropdown Menu Formatting ******/
 ul li {
   list-style: none;
-}
-
-.list-group, .list-group-item {
-  border-width: 0 0 0 0;
 }
 
 .dropdown-menu {
@@ -106,33 +185,39 @@ ul li {
   border-radius: 0;
 }
 
-.projects {
-
+.dropdown-menu li #logo {
+  /*font-family: 'Playfair Display', serif;*/
+  font-weight: 700;
 }
 
-.social-icons {
+.list-group, .list-group-item {
+  border-width: 0 0 0 0;
   margin: 0;
 }
 
-/********** Sidebar Navigation **********/
 
-/* Hide for mobile, show later */
-/*.sidebar {
-  display: none;
-}*/
+/****** Social Icons ******/
+.menu-icons {
+  margin: 0;
+  background-color: #000000;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  padding-top: 2px;
+}
 
-/*@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background-color: #B3B3B3;
-    border-right: 1px solid yellow;
-  }
-}*/
+/* footer icons */
+.icons {
+  background-color: #000000;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  padding-top: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+

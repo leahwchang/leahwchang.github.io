@@ -1,9 +1,9 @@
 $(document).ready(function(){
   // css tricks
   // add scrollspy to <body>
-  $('body').scrollspy({target: "#navigation", offset: 50});
+  $('body').scrollspy({target: "#navi", offset: 50});
   // add smooth scrolling on all links inside the navbar
-  $("#navigation a").on('click', function(event) {
+  $("#navi a").on('click', function(event) {
     // make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // prevent default anchor click behavior
@@ -20,27 +20,27 @@ $(document).ready(function(){
       });
     }
 
-    // change text and link with scrolling on click
-    var text = document.getElementById("nav-link");
-    // if link text content is "projects"
-    if (text.textContent === "projects") {
-      // change text content to "about me"
-      text.textContent = "about me";
-      // change a link to "about me"
-      $("a").attr("href", "#about");
-    } else {
-      // change text content to "projects"
-      text.textContent = "projects";
-      // change a link to "projects"
-      $("a").attr("href", "#projects");
-    }
+    // // change text and link with scrolling on click
+    // var text = document.getElementById("nav-link");
+    // // if link text content is "projects"
+    // if (text.textContent === "projects") {
+    //   // change text content to "about me"
+    //   text.textContent = "about me";
+    //   // change a link to "about me"
+    //   $("a").attr("href", "#about");
+    // } else {
+    //   // change text content to "projects"
+    //   text.textContent = "projects";
+    //   // change a link to "projects"
+    //   $("a").attr("href", "#projects");
+    // }
   });
   
-  // slick carousel
-  $('.carouselFrame').slick({
-    arrows: true,
-    infinite: true,
-    centerMode: true,
-    centerPadding: 0
-  }) ;
+  // // slick carousel
+  // $('.carouselFrame').slick({
+  //   arrows: true,
+  //   infinite: true,
+  //   centerMode: true,
+  //   centerPadding: 0
+  // }) ;
 });

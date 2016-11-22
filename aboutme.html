@@ -15,10 +15,10 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<!-- google fonts -->
-		<!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:200,400|Martel:300|Playfair+Display:700i|Roboto" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Martel|Playfair+Display:400,700" rel="stylesheet">
 
 		<!-- font awesome icons -->
-		<!-- <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
 
 		<!-- slick carousel -->
 		<!-- <link rel="stylesheet" type="text/css" href="public/slick/slick.css"/> -->
@@ -33,66 +33,82 @@
 
 	<body>
 
+	<!-- **** navigation **** -->
 		<div class="navi">
 			<ul>
 			  <li role="presentation" class="dropdown">
 			    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+			      <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 			    </a>
 			    	<ul class="dropdown-menu dropdown-menu-right list-group">
-						<li class="list-group-item">
-							<a href="index.html">LOGO</a>
-						</li>
-			      <li class="list-group-item text-center">
-			      	<a href="projects.html">Projects</a>
-			        <ul class="list-group projects text-center">
-			          <li class="list-group-item">
-			          	<a href="projects.html#project1">Project1</a>
-			          </li>
-			          <li class="list-group-item">
-			          	<a href="projects.html#project2">Project2</a>
-			          </li>
-			          <li class="list-group-item">
-			          	<a href="projects.html#project3">Project3</a>
-			          </li>
-			          <li class="list-group-item">
-			          	<a href="projects.html#project4">Project4</a>
-			          </li>
-			          <li class="list-group-item">
-			          	<a href="projects.html#project5">Project5</a>
-			          </li>
-			        </ul>
-			      </li>
-			      <li class="list-group-item text-center">
-			      	<a href="aboutme.html">About Me</a>
-			      </li>
-			      <ul class="list-group-item list-inline social-icons text-center">
-			      	<li class="list-group-item">
-			        	<a href="#">email</a>
-			        </li>
-			        <li class="list-group-item">
-			        	<a href="#">github</a>
-			        </li>
-			        <li class="list-group-item">
-			        	<a href="#">linkedin</a>
-			        </li>
-			      </ul>
-			  	</ul>
+							<li class="list-group-item text-center">
+								<a href="index.html" id="logo" class="bold">
+									<i class="fa fa-angle-left" aria-hidden="true"></i>  LC  <i class="fa fa-angle-right" aria-hidden="true"></i>
+								</a>
+							</li>
+				      <li class="list-group-item text-center">
+				      	<a href="projects.html">
+				      		<span class="bold">Projects</span>
+				      	</a>
+				        <ul class="list-group projects text-center">
+				          <li class="list-group-item">
+				          	<a href="projects.html#project1">Project1</a>
+				          </li>
+				          <li class="list-group-item">
+				          	<a href="projects.html#project2">Project2</a>
+				          </li>
+				          <li class="list-group-item">
+				          	<a href="projects.html#project3">Project3</a>
+				          </li>
+				          <li class="list-group-item">
+				          	<a href="projects.html#project4">Project4</a>
+				          </li>
+				          <li class="list-group-item">
+				          	<a href="projects.html#project5">Project5</a>
+				          </li>
+				        </ul>
+				      </li>
+				      <li class="list-group-item text-center bold">
+				      	<a href="aboutme.html">
+				      		<span class="bold">About Me</span>
+				      	</a>
+				      </li>
+				      <ul class="list-group-item list-inline text-center">
+				      	<li class="list-group-item">
+				        	<a href="#" target="_blank" class="menu-icons">
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+									</a>
+				        </li>
+				        <li class="list-group-item">
+				        	<a href="#" target="_blank" class="menu-icons">
+										<i class="fa fa-github-alt" aria-hidden="true"></i>
+									</a>
+				        </li>
+				        <li class="list-group-item">
+				        	<a href="#" target="_blank" class="menu-icons">
+										<i class="fa fa-linkedin" aria-hidden="true"></i>
+									</a>
+				        </li>
+				      </ul>
+			  		</ul>
 			  </li>
 			</ul>
 		</div>
 
 		<div class="wrapper">
-			<div class="container">
+			<div class="container text-center">
 
-				<div class="row">
-					<div class="col-xs-12 col-md-12 text-center">
-						logo
+				<div class="row logo">
+					<div class="col-xs-12 col-md-12">
+						<a href="index.html">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>  LC  <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</a>
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-xs-12 col-md-12 content">
+	<!-- **** main content **** -->
+				<div class="row content about">
+					<div class="col-xs-12 col-md-12">
 						<div class="col-xs-12 col-md-6">
 							<img src="http://placehold.it/480x300" class="img-responsive">
 						</div>
@@ -108,9 +124,21 @@
 					</div>
 				</div>
 
-				<div class="row">
+	<!-- **** social icons **** -->
+				<div class="row footer">
 					<div class="col-xs-12 col-md-12 text-center">
-						contact me: social icons
+						<a href="#" target="_blank" class="icons">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" target="_blank" class="icons">
+							<i class="fa fa-github-alt" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" target="_blank" class="icons">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						
 					</div>
 				</div>
 
