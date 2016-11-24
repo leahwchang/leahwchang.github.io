@@ -29,6 +29,7 @@ html, body {
 .container {
   /*border: 1px solid yellow;*/
   height: 100%;
+  background-color: #FFFFFF;
 }
 
 .top-left {
@@ -78,6 +79,7 @@ html, body {
   padding-bottom: 10px;
   font-family: 'Rozha One', serif;
   font-size: 1.5em;
+  background-color: #FFFFFF;
 }
 
 .footer {
@@ -93,6 +95,19 @@ html, body {
 div > .fa-angle-left, 
 div > .fa-angle-right {
   color: #927EB4;
+}
+
+#hr1 {
+  width: 50%;
+  border-width: 1px;
+  border-color: #927EB4;
+}
+
+#hr2 {
+  width: 20%;
+  border-width: 1px;
+  border-color: #927EB4;
+  margin-left: 0px;
 }
 
 /****** Media Queries ******/
@@ -174,6 +189,16 @@ div > .fa-angle-right {
     min-height: 100vh;
     display: flex;
     align-items: center;
+  }
+
+  .content {
+    display: table;
+  }
+
+  .content [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   .col-xs-12 {
