@@ -22,155 +22,174 @@
 		<!-- font awesome icons -->
 		<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
 
-		<link rel="stylesheet" type="text/css" href="public/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="public/stylesheet3.css">
 		<!-- <script type="text/javascript" src="public/javascript2.js"></script> -->
 
 	</head>
 
 	<body>
 
-		<nav class="navbar navbar-fixed-top navbar-static-top">
-			<div class="container-fluid">
+<!-- ********** wrapper ********** -->
+		<div class="wrapper">
 
-				<div class="navbar-header">
-					<a href="index2.html">
-						<i class="fa fa-angle-left" aria-hidden="true"></i>
-						LC
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</a>
-				</div>
+<!-- ********** fixed navbar ********** -->
+	    <div class="navbar navbar-fixed-top">
+	      <div class="container-fluid">
 
-				<div class="dropdown navbar-right fixed-dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-						</a>
-						<ul class="dropdown-menu dropdown-menu-right">
-							<li class="dropdown-header"><a href="projects.html">projects</a></li>
-								<li><a href="projects.html#project1">project 1</a></li>
-								<li><a href="projects.html#project2">project 2</a></li>
-								<li><a href="projects.html#project3">project 3</a></li>
-								<li><a href="projects.html#project4">project 4</a></li>
-								<li><a href="projects.html#project5">project 5</a></li>
-							<li class="dropdown-header"><a href="aboutme.html">about me</a></li>
-						</ul>
-				</div>
+	        <div class="navbar-header">
+	          <a href="index.html">
+	            <i class="fa fa-angle-left" aria-hidden="true"></i>
+	            LC
+	            <i class="fa fa-angle-right" aria-hidden="true"></i>
+	          </a>
+	        </div>
 
+	        <div class="dropdown navbar-right fixed-dropdown">
+	            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	              <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+	            </a>
+	            <ul class="dropdown-menu dropdown-menu-right">
+
+	              <li class="dropdown-header"><a href="projects.html">projects</a></li>
+	                <li><a href="projects.html#project1">project 1</a></li>
+	                <li><a href="projects.html#project2">project 2</a></li>
+	                <li><a href="projects.html#project3">project 3</a></li>
+	                <li><a href="projects.html#project4">project 4</a></li>
+	                <li><a href="projects.html#project5">project 5</a></li>
+
+	              <li class="dropdown-header"><a href="aboutme.html">about me</a></li>
+
+	              <ul class="dropdown-header list-inline">
+				        	<li class="list-group-item">
+	                  <a href="#" target="_blank" class="menu-icons">
+											<i class="fa fa-envelope" aria-hidden="true"></i>
+										</a>
+	                </li>
+	                <li class="list-group-item">
+	                  <a href="http://codepen.io/wleahc/" target="_blank" class="menu-icons"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+	                </li>
+	                <li class="list-group-item">
+	                  <a href="https://github.com/leahwchang" target="_blank" class="menu-icons"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+	                </li>
+	                <li class="list-group-item">
+	                  <a href="https://linkedin.com/in/leahwchang" target="_blank" class="menu-icons"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+	                </li>
+					      </ul>
+
+	            </ul>
+	        </div>
+	      </div>
+	    </div>
+
+<!-- ********** page title ********** -->
+			<div class="header text-center">
+				<h3>projects</h3>
 			</div>
-		</nav>
 
-		<div class="wrapper projects">
-			<div class="container">
+<!-- ********** page content ********** -->
+				<div class="container text-justify">
+					<div class="row" id="project1">
+						<div class="col-xs-12 col-sm-5 col-sm-offset-1 add-padding vertical-align">
+							<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="lingo-oke">
+						</div>
+						<div class="col-xs-12 col-sm-5 add-padding vertical-align">
+							<p>Lingo-Oke</p>
 
-				<div class="row logo text-center">
-					<div class="col-xs-12 col-md-12">
-						<i class="fa fa-quote-left" aria-hidden="true"></i>
-							<span>  projects  </span>
-						<i class="fa fa-quote-right" aria-hidden="true"></i>
+							<hr class="projects-hr">
+
+							<p>・A Rails karaoke web app with folksongs and flashcards. Currently teaches Mandarin. New languages pending.</p>
+
+							<p>・Generated json objects from database. Animated karaoke lyrics, audios, and animations with JavaScript.</p>
+
+							<p>・Created flashcard flipping motion with CSS. Drew logo and animations with 53-Paper for iPad.</p>
+						</div>
+					</div>
+
+					<div class="row" id="project2">
+						<div class="col-xs-12 col-sm-5 col-sm-offset-1 add-padding vertical-align">
+							<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="event hop">
+						</div>
+						<div class="col-xs-12 col-sm-5 add-padding vertical-align">
+							<p>event hop</p>
+
+							<hr class="projects-hr">
+
+							<p>・An e-invite system implemented with devise for secure user registration and sessions control.</p>
+
+							<p>・Users can create and send invitations with Rails Action Mailer/Heroku Sendgrid.</p>
+
+							<p>・Added Google Maps for Rails gem to pin destinations. Designed front-end with SASS and JavaScript.</p>
+						</div>
+					</div>
+
+					<div class="row" id="project3">
+						<div class="col-xs-12 col-sm-5 col-sm-offset-1 add-padding vertical-align">
+							<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="stumblr">
+						</div>
+						<div class="col-xs-12 col-sm-5 add-padding vertical-align">
+							<p >Stumblr</p>
+
+							<hr class="projects-hr">
+
+							<p>・A Tumblr clone. Users can set up profiles, upload pictures with Paperclip gem, post, comment, and connect.</p>
+
+							<p>・Built full blogging functions using Ruby on Rails. Used SQLite3 and ActiveRecord for database manipulation.</p>
+						</div>
+					</div>
+
+					<div class="row" id="project2">
+						<div class="col-xs-12 col-sm-5 col-sm-offset-1 add-padding vertical-align">
+							<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="tummy roulette">
+						</div>
+						<div class="col-xs-12 col-sm-5 add-padding vertical-align">
+							<p>Tummy Roulette</p>
+
+							<hr class="projects-hr">
+
+							<p>・A Rails web app for the hungry indecisives. Picks a random eatery with the push of a button.</p>
+
+							<p>・Incorporated Yelp API to access restaurant database. Designed front-end with Bootstrap.</p>
+						</div>
+					</div>
+
+					<div class="row" id="project2">
+						<div class="col-xs-12 col-sm-5 col-sm-offset-1 add-padding vertical-align">
+							<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="fashion blog">
+						</div>
+						<div class="col-xs-12 col-sm-5 add-padding vertical-align">
+							<p>Fashion Blog</p>
+
+							<hr class="projects-hr">
+
+							<p>・Selected to design and develop web presence for fashion blogger.</p>
+
+							<p>・Currently creating front-end designs and back-end content management system, and setting up database.</p>
+						</div>
 					</div>
 				</div>
 
-		<!-- **** main content **** -->
-				<div class="row text-justify content" id="project1">
-					<div class="col-xs-12 col-md-6">
-						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="lingo-oke">
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<p class="bold">Lingo-Oke</p>
-
-						<hr class="hr2">
-
-						<p>・A Rails karaoke web app with folksongs and flashcards. Currently teaches Mandarin. New languages pending.</p>
-
-						<p>・Generated json objects from database. Animated karaoke lyrics, audios, and animations with JavaScript.</p>
-
-						<p>・Created flashcard flipping motion with CSS. Drew logo and animations with 53-Paper for iPad.</p>
-					</div>
-				</div>
-
-				<div class="row text-justify content" id="project2">
-					<div class="col-xs-12 col-md-6">
-						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="event hop">
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<p class="bold">event hop</p>
-
-						<hr class="hr2">
-
-						<p>・An e-invite system implemented with devise for secure user registration and sessions control.</p>
-
-						<p>・Users can create and send invitations with Rails Action Mailer/Heroku Sendgrid.</p>
-
-						<p>・Added Google Maps for Rails gem to pin destinations. Designed front-end with SASS and JavaScript.</p>
-					</div>
-				</div>
-
-				<div class="row text-justify content" id="project3">
-					<div class="col-xs-12 col-md-6">
-						<img src="http://placehold.it/400x240" class="img-responsive center-block">
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<p class="bold">Stumblr</p>
-
-						<hr class="hr2">
-
-						<p>・A Tumblr clone. Users can set up profiles, upload pictures with Paperclip gem, post, comment, and connect.</p>
-
-						<p>・Built full blogging functions using Ruby on Rails. Used SQLite3 and ActiveRecord for database manipulation.</p>
-					</div>
-				</div>
-
-				<div class="row text-justify content" id="project4">
-					<div class="col-xs-12 col-md-6">
-						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="tummy roulette">
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<p class="bold">Tummy Roulette</p>
-
-						<hr class="hr2">
-
-						<p>・A Rails web app for the hungry indecisives. Picks a random eatery with the push of a button.</p>
-
-						<p>・Incorporated Yelp API to access restaurant database. Designed front-end with Bootstrap.</p>
-					</div>
-				</div>
-
-				<div class="row text-justify content" id="project5">
-					<div class="col-xs-12 col-md-6">
-						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="fashion blog">
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<p class="bold">Fashion Blogger's Site</p>
-
-						<hr class="hr2">
-
-						<p>・Selected to design and develop web presence for fashion blogger.</p>
-
-						<p>・Currently creating front-end designs and back-end content management system, and setting up database.</p>
-					</div>
-				</div>
-
-		<!-- **** social icons **** -->
-				<div class="row footer">
-					<div class="col-xs-12 col-md-12 text-center">
-						<a href="#" target="_blank" class="icons">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</a>
-
-						<a href="http://codepen.io/wleahc/" target="_blank" class="icons">
-							<i class="fa fa-codepen" aria-hidden="true"></i>
-						</a>
-
-						<a href="https://github.com/leahwchang" target="_blank" class="icons">
-							<i class="fa fa-github-alt" aria-hidden="true"></i>
-						</a>
-
-						<a href="https://linkedin.com/in/leahwchang" target="_blank" class="icons">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</a>
-					</div>
-				</div>
-
+			<div class="push">
 			</div>
 		</div>
+
+<!-- ********** footer ********** -->
+		<div class ="footer text-center">
+			<a href="#" target="_blank" class="icons">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+
+			<a href="http://codepen.io/wleahc/" target="_blank" class="icons">
+				<i class="fa fa-codepen" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://github.com/leahwchang" target="_blank" class="icons">
+				<i class="fa fa-github-alt" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://linkedin.com/in/leahwchang" target="_blank" class="icons">
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+			</a>
+		</div>
+
 	</body>
 </html>

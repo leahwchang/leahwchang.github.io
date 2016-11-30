@@ -19,54 +19,48 @@ body {
   position: fixed;
   top: 18px;
   left: 35px;
-  /*
-  mobile
-  right: 20px;
-  */
 }
 
 .fixed-dropdown {
   position: fixed;
   top: 18px;
   right: 25px;
-  /*
-  mobile
-  right: 20px;
-  */
 }
 
-.push, .footer {
-  height: 50px;
+.header {
+  margin-bottom: 25px;
+  width: 100%;
+  border: 1px solid red;
 }
+
+.overflow {
+  overflow: hidden;
+}
+
+.push {
+  height: 25px;
+}
+
 .container {
   height: 100%;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   border: 1px solid black;
-}
-
-.header {
-  width: 100%;
-  border: 1px solid red;
-}
-
-/*.content {
-  width: 75%;
-  margin: 0 auto;
-}*/
-
-.overflow {
-  overflow: hidden;
+  /*padding-top: 80px;*/
 }
 
 .col-xs-12 {
   border: 1px solid black;
-  /*height: 100%;*/
   padding: 0;
-  /*margin: auto auto;*/
 }
 
+.footer {
+  height: 40px;
+  border: 1px solid red;
+}
+
+/* index.html */
 .index-pic {
   position: relative;
 }
@@ -80,18 +74,34 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* projects.html */
+.vertical-align {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-/* Small Devices, Tablets */
+.add-padding {
+  padding: 10px;
+}
+
+.projects-hr {
+  width: 20%;
+  border-width: 1px;
+  border-color: #927EB4;
+  margin-left: 0;
+  padding: 0;
+}
+
+/* aboutme.html */
+.aboutme-hr {
+  width: 50%;
+  border-width: 1px;
+  border-color: #927EB4;
+}
+
+/* Small Devices, Tablets, and Up */
 @media only screen and (min-width : 768px) {
-  /*.navbar-header {
-    position: fixed;
-    top: 18px;
-    left: 35px;
-  }*/
-  body {
-    padding-top: 100px;
-  }
-
   .fixed-dropdown {
     position: fixed;
     top: 18px;

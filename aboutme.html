@@ -21,149 +21,112 @@
 		<!-- font awesome icons -->
 		<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
 
-		<link rel="stylesheet" type="text/css" href="public/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="public/stylesheet3.css">
 		<!-- <script type="text/javascript" src="public/javascript2.js"></script> -->
 
 	</head>
 
 	<body>
 
-		<span class="top-left">
-			<a href="index.html" class="logo visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
-				<i class="fa fa-angle-left" aria-hidden="true"></i><span>  LC  </span><i class="fa fa-angle-right" aria-hidden="true"></i>
-			</a>
-		</span>
+<!-- ********** wrapper ********** -->
+		<div class="wrapper">
 
-		<!-- **** navigation **** -->
-		<div class="navi">
-			<ul>
-			  <li role="presentation" class="dropdown">
-			    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-			    </a>
-			    	<ul class="dropdown-menu dropdown-menu-right list-group">
-				      <li class="list-group-item text-center">
-				      	<a href="projects.html">
-				      		<span class="bold">Projects</span>
-				      	</a>
-				        <ul class="list-group projects text-center">
-				          <li class="list-group-item">
-				          	<a href="projects.html#project1">Project1</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project2">Project2</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project3">Project3</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project4">Project4</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project5">Project5</a>
-				          </li>
-				        </ul>
-				      </li>
-				      <li class="list-group-item text-center">
-				      	<a href="aboutme.html">
-				      		<span class="bold">About Me</span>
-				      	</a>
-				      </li>
-				      <ul class="list-group-item list-inline text-center">
-				      	<li class="list-group-item">
-				        	<a href="#" target="_blank" class="menu-icons">
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-									</a>
-				        </li>
-				        <li class="list-group-item">
-					        <a href="http://codepen.io/wleahc/" target="_blank" class="menu-icons">
-										<i class="fa fa-codepen" aria-hidden="true"></i>
-									</a>
-				        </li>
-				        <li class="list-group-item">
-				        	<a href="https://github.com/leahwchang" target="_blank" class="menu-icons">
-										<i class="fa fa-github-alt" aria-hidden="true"></i>
-									</a>
-				        </li>
-				        <li class="list-group-item">
-				        	<a href="https://linkedin.com/in/leahwchang" target="_blank" class="menu-icons">
-										<i class="fa fa-linkedin" aria-hidden="true"></i>
-									</a>
-				        </li>
-				      </ul>
-			  		</ul>
-			  </li>
-			</ul>
-		</div>
+<!-- ********** fixed navbar ********** -->
+	    <div class="navbar navbar-fixed-top">
+	      <div class="container-fluid">
 
-		<div class="wrapper about">
-			<div class="container text-center">
+	        <div class="navbar-header">
+	          <a href="index.html">
+	            <i class="fa fa-angle-left" aria-hidden="true"></i>
+	            LC
+	            <i class="fa fa-angle-right" aria-hidden="true"></i>
+	          </a>
+	        </div>
 
-				<div class="row logo">
-					<div class="col-xs-12 col-md-12">
-						<i class="fa fa-quote-left" aria-hidden="true"></i>
-							<span>  hello  </span>
-						<i class="fa fa-quote-right" aria-hidden="true"></i>
+	        <div class="dropdown navbar-right fixed-dropdown">
+	            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	              <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+	            </a>
+	            <ul class="dropdown-menu dropdown-menu-right">
+
+	              <li class="dropdown-header"><a href="projects.html">projects</a></li>
+	                <li><a href="projects.html#project1">project 1</a></li>
+	                <li><a href="projects.html#project2">project 2</a></li>
+	                <li><a href="projects.html#project3">project 3</a></li>
+	                <li><a href="projects.html#project4">project 4</a></li>
+	                <li><a href="projects.html#project5">project 5</a></li>
+
+	              <li class="dropdown-header"><a href="aboutme.html">about me</a></li>
+
+	              <ul class="dropdown-header list-inline">
+				        	<li class="list-group-item">
+	                  <a href="#" target="_blank" class="menu-icons">
+											<i class="fa fa-envelope" aria-hidden="true"></i>
+										</a>
+	                </li>
+	                <li class="list-group-item">
+	                  <a href="http://codepen.io/wleahc/" target="_blank" class="menu-icons"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+	                </li>
+	                <li class="list-group-item">
+	                  <a href="https://github.com/leahwchang" target="_blank" class="menu-icons"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+	                </li>
+	                <li class="list-group-item">
+	                  <a href="https://linkedin.com/in/leahwchang" target="_blank" class="menu-icons"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+	                </li>
+					      </ul>
+
+	            </ul>
+	        </div>
+	      </div>
+	    </div>
+
+<!-- ********** page title ********** -->
+			<div class="header text-center">
+				<h3>hello there</h3>
+			</div>
+
+<!-- ********** page content ********** -->
+			<div class="container text-justify">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 col-sm-offset-1 add-padding vertical-align">
+						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="hello there">
+					</div>
+					<div class="col-xs-12 col-sm-5 add-padding vertical-align">
+						<p>I am a full stack web developer currently based in New York City. I have delivered web applications from concept to design to deployment. I also enjoy working in team environments to spark up new ideas and collaborate on projects. I love to express my appreciation for creative arts through my own illustrations.</p>
+
+						<img src="images/icons.png" class="img-responsive center-block" alt="skills">
+
+						<p>Prior to transition to coding, I worked in fashion and interior decorating companies. My roles were in purchasing, operations, and e-commerce, focused in communications, product development, marketing, and problem solving.</p>
+
+						<hr class="aboutme-hr">
+
+						<p>I am available for freelance contracts and junior web developer role on a team where I can contribute my ideas and build on my skills. Shoot me an email!</p>
 					</div>
 				</div>
 
-		<!-- **** main content **** -->
-				<div class="row text-justify content">
-					<div class="col-xs-12 col-md-6">
-						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="hello!">
-					</div>
-
-					<div class="col-xs-12 col-md-6">
-						<div class="row">
-							I am a full stack web developer currently based in New York City. I have delivered web applications from concept to design to deployment. I also enjoy working in team environments to spark up new ideas and collaborate on projects. I love to express my appreciation for creative arts through my own illustrations.
-						</div>
-
-						<br>
-
-						<div class="row">
-							<div class="col-xs-12">
-								<img src="images/icons.png" class="img-responsive center-block" alt="skills icons">
-							</div>
-						</div>
-
-						<br>
-
-						<div class="row">
-							Prior to transition to coding, I worked in fashion and interior decorating companies. My roles were in purchasing, operations, and e-commerce, focused in communications, product development, marketing, and problem solving.
-						</div>
-
-						<br>
-
-						<hr class="hr1">
-
-						<div class="row">
-							<div class="col-xs-12">I am available for freelance contracts and junior web developer role on a team where I can contribute my ideas and build on my skills. Shoot me an email! <i class="fa fa-smile-o" aria-hidden="true"></i></div>
-						</div>
-					</div>
+				<div class="push">
 				</div>
-
-		<!-- **** social icons **** -->
-				<div class="row footer">
-					<div class="col-xs-12 col-md-12 text-center">
-						<a href="#" target="_blank" class="icons">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</a>
-
-						<a href="http://codepen.io/wleahc/" target="_blank" class="icons">
-							<i class="fa fa-codepen" aria-hidden="true"></i>
-						</a>
-
-						<a href="https://github.com/leahwchang" target="_blank" class="icons">
-							<i class="fa fa-github-alt" aria-hidden="true"></i>
-						</a>
-
-						<a href="https://linkedin.com/in/leahwchang" target="_blank" class="icons">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</a>
-					</div>
-				</div>
-
 			</div>
 		</div>
+
+<!-- ********** footer ********** -->
+		<div class ="footer text-center">
+			<a href="#" target="_blank" class="icons">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+
+			<a href="http://codepen.io/wleahc/" target="_blank" class="icons">
+				<i class="fa fa-codepen" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://github.com/leahwchang" target="_blank" class="icons">
+				<i class="fa fa-github-alt" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://linkedin.com/in/leahwchang" target="_blank" class="icons">
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+			</a>
+		</div>
+
 	</body>
 </html>
