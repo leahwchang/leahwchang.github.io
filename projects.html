@@ -3,14 +3,16 @@
 	<head>
 		<title>Leah Chang | Web Developer</title>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+
 		<!-- jquery -->
 		<script type="text/javascript" src="public/jquery-2.1.4.js"></script>
 
 		<!-- bootstrap -->
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -27,73 +29,34 @@
 
 	<body>
 
-		<span class="top-left">
-			<a href="index.html" class="logo visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
-				<i class="fa fa-angle-left" aria-hidden="true"></i><span>  LC  </span><i class="fa fa-angle-right" aria-hidden="true"></i>
-			</a>
-		</span>
+		<nav class="navbar navbar-fixed-top navbar-static-top">
+			<div class="container-fluid">
 
-		<!-- **** navigation **** -->
-		<div class="navi">
-			<ul>
-			  <li role="presentation" class="dropdown">
-			    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-			    </a>
-			    	<ul class="dropdown-menu dropdown-menu-right list-group">
-				      <li class="list-group-item text-center">
-				      	<a href="projects.html">
-				      		<span class="bold">Projects</span>
-				      	</a>
-				        <ul class="list-group projects text-center">
-				          <li class="list-group-item">
-				          	<a href="projects.html#project1">Project1</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project2">Project2</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project3">Project3</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project4">Project4</a>
-				          </li>
-				          <li class="list-group-item">
-				          	<a href="projects.html#project5">Project5</a>
-				          </li>
-				        </ul>
-				      </li>
-				      <li class="list-group-item text-center">
-				      	<a href="aboutme.html">
-				      		<span class="bold">About Me</span>
-				      	</a>
-				      </li>
-				      <ul class="list-group-item list-inline text-center">
-				      	<li class="list-group-item">
-				        	<a href="#" target="_blank" class="menu-icons">
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-									</a>
-				        </li>
-				        <li class="list-group-item">
-					        <a href="http://codepen.io/wleahc/" target="_blank" class="menu-icons">
-										<i class="fa fa-codepen" aria-hidden="true"></i>
-									</a> 
-				        </li>
-				        <li class="list-group-item">
-				        	<a href="https://github.com/leahwchang" target="_blank" class="menu-icons">
-										<i class="fa fa-github-alt" aria-hidden="true"></i>
-									</a>
-				        </li>
-				        <li class="list-group-item">
-				        	<a href="https://linkedin.com/in/leahwchang" target="_blank" class="menu-icons">
-										<i class="fa fa-linkedin" aria-hidden="true"></i>
-									</a>
-				        </li>
-				      </ul>
-			  		</ul>
-			  </li>
-			</ul>
-		</div>
+				<div class="navbar-header">
+					<a href="index2.html">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+						LC
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
+				</div>
+
+				<div class="dropdown navbar-right fixed-dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li class="dropdown-header"><a href="projects.html">projects</a></li>
+								<li><a href="projects.html#project1">project 1</a></li>
+								<li><a href="projects.html#project2">project 2</a></li>
+								<li><a href="projects.html#project3">project 3</a></li>
+								<li><a href="projects.html#project4">project 4</a></li>
+								<li><a href="projects.html#project5">project 5</a></li>
+							<li class="dropdown-header"><a href="aboutme.html">about me</a></li>
+						</ul>
+				</div>
+
+			</div>
+		</nav>
 
 		<div class="wrapper projects">
 			<div class="container">
@@ -107,92 +70,82 @@
 				</div>
 
 		<!-- **** main content **** -->
-				<div class="row text-justify">
-					<div class="col-xs-12 col-md-12 content" id="project1">
-						<div class="col-xs-12 col-md-6">
-							<img src="http://placehold.it/400x240" class="img-responsive center-block">
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<p class="bold">Lingo-Oke</p>
+				<div class="row text-justify content" id="project1">
+					<div class="col-xs-12 col-md-6">
+						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="lingo-oke">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p class="bold">Lingo-Oke</p>
 
-							<hr id="hr2">
+						<hr class="hr2">
 
-							<p>・A Rails karaoke web app with folksongs and flashcards. Currently teaches Mandarin. New languages pending.</p>
+						<p>・A Rails karaoke web app with folksongs and flashcards. Currently teaches Mandarin. New languages pending.</p>
 
-							<p>・Generated json objects from database. Animated karaoke lyrics, audios, and animations with JavaScript.</p>
+						<p>・Generated json objects from database. Animated karaoke lyrics, audios, and animations with JavaScript.</p>
 
-							<p>・Created flashcard flipping motion with CSS. Drew logo and animations with 53-Paper for iPad.</p>
-						</div>
+						<p>・Created flashcard flipping motion with CSS. Drew logo and animations with 53-Paper for iPad.</p>
 					</div>
 				</div>
 
-				<div class="row text-justify">
-					<div class="col-xs-12 col-md-12 content" id="project2">
-						<div class="col-xs-12 col-md-6">
-							<img src="http://placehold.it/400x240" class="img-responsive center-block">
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<p class="bold">event hop</p>
+				<div class="row text-justify content" id="project2">
+					<div class="col-xs-12 col-md-6">
+						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="event hop">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p class="bold">event hop</p>
 
-							<hr id="hr2">
+						<hr class="hr2">
 
-							<p>・An e-invite system implemented with devise for secure user registration and sessions control.</p>
+						<p>・An e-invite system implemented with devise for secure user registration and sessions control.</p>
 
-							<p>・Users can create and send invitations with Rails Action Mailer/Heroku Sendgrid.</p>
+						<p>・Users can create and send invitations with Rails Action Mailer/Heroku Sendgrid.</p>
 
-							<p>・Added Google Maps for Rails gem to pin destinations. Designed front-end with SASS and JavaScript.</p>
-						</div>
+						<p>・Added Google Maps for Rails gem to pin destinations. Designed front-end with SASS and JavaScript.</p>
 					</div>
 				</div>
 
-				<div class="row text-justify">
-					<div class="col-xs-12 col-md-12 content" id="project3">
-						<div class="col-xs-12 col-md-6">
-							<img src="http://placehold.it/400x240" class="img-responsive center-block">
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<p class="bold">Stumblr</p>
+				<div class="row text-justify content" id="project3">
+					<div class="col-xs-12 col-md-6">
+						<img src="http://placehold.it/400x240" class="img-responsive center-block">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p class="bold">Stumblr</p>
 
-							<hr id="hr2">
-							
-							<p>・A Tumblr clone. Users can set up profiles, upload pictures with Paperclip gem, post, comment, and connect.</p>
+						<hr class="hr2">
 
-							<p>・Built full blogging functions using Ruby on Rails. Used SQLite3 and ActiveRecord for database manipulation.</p>
-						</div>
+						<p>・A Tumblr clone. Users can set up profiles, upload pictures with Paperclip gem, post, comment, and connect.</p>
+
+						<p>・Built full blogging functions using Ruby on Rails. Used SQLite3 and ActiveRecord for database manipulation.</p>
 					</div>
 				</div>
 
-				<div class="row text-justify">
-					<div class="col-xs-12 col-md-12 content" id="project4">
-						<div class="col-xs-12 col-md-6">
-							<img src="http://placehold.it/400x240" class="img-responsive center-block">
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<p class="bold">Tummy Roulette</p>
+				<div class="row text-justify content" id="project4">
+					<div class="col-xs-12 col-md-6">
+						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="tummy roulette">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p class="bold">Tummy Roulette</p>
 
-							<hr id="hr2">
-							
-							<p>・A Rails web app for the hungry indecisives. Picks a random eatery with the push of a button.</p>
+						<hr class="hr2">
 
-							<p>・Incorporated Yelp API to access restaurant database. Designed front-end with Bootstrap.</p>
-						</div>
+						<p>・A Rails web app for the hungry indecisives. Picks a random eatery with the push of a button.</p>
+
+						<p>・Incorporated Yelp API to access restaurant database. Designed front-end with Bootstrap.</p>
 					</div>
 				</div>
 
-				<div class="row text-justify">
-					<div class="col-xs-12 col-md-12 content" id="project5">
-						<div class="col-xs-12 col-md-6">
-							<img src="http://placehold.it/400x240" class="img-responsive center-block">
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<p class="bold">Fashion Blogger's Site</p>
+				<div class="row text-justify content" id="project5">
+					<div class="col-xs-12 col-md-6">
+						<img src="http://placehold.it/400x240" class="img-responsive center-block" alt="fashion blog">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p class="bold">Fashion Blogger's Site</p>
 
-							<hr id="hr2">
+						<hr class="hr2">
 
-							<p>・Selected to design and develop web presence for fashion blogger.</p>
-							
-							<p>・Currently creating front-end designs and back-end content management system, and setting up database.</p>
-						</div>
+						<p>・Selected to design and develop web presence for fashion blogger.</p>
+
+						<p>・Currently creating front-end designs and back-end content management system, and setting up database.</p>
 					</div>
 				</div>
 
@@ -205,7 +158,7 @@
 
 						<a href="http://codepen.io/wleahc/" target="_blank" class="icons">
 							<i class="fa fa-codepen" aria-hidden="true"></i>
-						</a> 
+						</a>
 
 						<a href="https://github.com/leahwchang" target="_blank" class="icons">
 							<i class="fa fa-github-alt" aria-hidden="true"></i>
