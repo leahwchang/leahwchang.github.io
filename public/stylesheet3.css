@@ -5,10 +5,11 @@ font-family: 'Rozha One', serif;
 
 body {
   padding-top: 80px;
+  position: relative;
 }
 
 .navbar {
-  background-color: black;
+  background-color: #FFFFFF;
   min-height: 50px;
   min-width: 100%;
   padding-left: 0;
@@ -27,18 +28,16 @@ body {
   right: 25px;
 }
 
-.header {
+.page-header {
+  margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
   border: 1px solid red;
 }
 
-.overflow {
-  overflow: hidden;
-}
-
 .push {
   height: 25px;
+  border: 1px solid blue;
 }
 
 .container {
@@ -53,6 +52,10 @@ body {
 .col-xs-12 {
   border: 1px solid black;
   padding: 0;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .footer {
@@ -75,16 +78,6 @@ body {
 }
 
 /* projects.html */
-.vertical-align {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.add-padding {
-  padding: 10px;
-}
-
 .projects-hr {
   width: 20%;
   border-width: 1px;
@@ -99,6 +92,18 @@ body {
   border-width: 1px;
   border-color: #927EB4;
 }
+
+/* projects.html + aboutme.html */
+.vertical-align {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.add-padding {
+  padding: 10px;
+}
+
 
 /* Small Devices, Tablets, and Up */
 @media only screen and (min-width : 768px) {
