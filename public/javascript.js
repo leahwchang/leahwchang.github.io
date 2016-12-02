@@ -23,6 +23,7 @@ $(document).ready(function(){
     }
   });
 
+  // anchor tag to positions on another page
   var offsetSize = $(".navbar").innerHeight();
 
   $('html, body').animate({
