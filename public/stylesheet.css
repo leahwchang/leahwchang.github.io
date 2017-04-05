@@ -180,6 +180,11 @@ p.p-title {
 
 
 /****** projects.html ******/
+.glyphicon-arrow-right {
+  text-decoration: none;
+  color: black;
+}
+
 .projects-hr {
   width: 20%;
   border-width: 1px;
